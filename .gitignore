@@ -1,0 +1,53 @@
+# --- Security & Secrets (Crucial for LangChain API keys) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- Python & Bytecode ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Virtual Environments (uv / venv) ---
+.venv/
+venv/
+ENV/
+env/
+
+# --- LangChain & Local Vector DBs / Data Stores ---
+# Vector DB stores
+chroma_db/
+*.chroma/
+*.faiss
+*.pkl
+lancedb/
+qdrant_storage/
+
+# LangChain / LangSmith / Caches
+.langchain/
+.cache/
+*.log
+logs/
+
+# Local documents / test data
+data/
+documents/
+raw_data/
+!data/README.md
+
+# --- Package & Build Artifacts ---
+build/
+dist/
+*.egg-info/
+
+# --- IDE & OS Files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
